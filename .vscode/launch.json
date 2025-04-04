@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Program",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}/main.go",
+      "env": {
+        "PORT": "8081",  
+        "DB_DSN": "root:abc123@tcp(127.0.0.1:3306)/QueueSystem?charset=utf8mb4&parseTime=True&loc=Local"
+      },
+      "args": ["-port=8081"]
+    }
+  ]
+}
